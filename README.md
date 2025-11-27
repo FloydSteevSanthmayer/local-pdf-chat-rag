@@ -5,7 +5,7 @@ A professional, on-prem Retrieval-Augmented Generation (RAG) demo built with Str
 The app allows you to upload a PDF, build a vectorstore from document chunks, and interactively ask questions with source citations.
 
 ## Files in this repo
-- `app_chat_improved.py` — Streamlit application (main)
+- `app.py` — Streamlit application (main)
 - `download_model.py` — Download GGUF model from Hugging Face (edit token & path at top)
 - `requirements.txt` — Python dependencies
 - `FLOWCHART.md` — Mermaid flowchart + short explanation
@@ -35,7 +35,7 @@ python download_model.py
 
 4. Run the Streamlit app:
 ```bash
-streamlit run app_chat_improved.py
+streamlit run app.py
 ```
 
 ## Image
