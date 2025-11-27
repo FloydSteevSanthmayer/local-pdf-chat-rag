@@ -1,0 +1,29 @@
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtualenvs
+.venv/
+venv/
+
+# Models & large files
+*.gguf
+models/
+chroma_storage/
+*.part
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Secrets
+.env
+*.env
