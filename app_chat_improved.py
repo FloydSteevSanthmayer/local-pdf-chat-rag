@@ -1,23 +1,3 @@
-"""
-app_chat_improved.py
-
-Streamlit frontend for Conversational Retrieval using LlamaCpp + Chroma + HuggingFaceEmbeddings.
-
-Key points:
-- MODEL_PATH is defined at the top of the file for easy editing.
-- Upload a PDF (required). The app saves it to a temp file, builds an in-memory Chroma DB,
-  and creates a ConversationalRetrievalChain with a local LlamaCpp model.
-- Conversation history is stored in st.session_state and shown in the UI.
-- Source snippets (if returned by the chain) are displayed below each answer.
-
-Before running, install required packages in your venv:
-pip install streamlit torch sentence-transformers langchain langchain-community chromadb llama-cpp-python tqdm
-
-Note:
-- Ensure your local Llama runtime supports the model format (GGUF) and that the model file exists at MODEL_PATH.
-- This app uses in-memory Chroma; change to persistent storage if you need persistence across runs.
-"""
-
 import os
 import tempfile
 import logging
